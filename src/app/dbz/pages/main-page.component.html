@@ -1,0 +1,10 @@
+<h1>DBZ Personajes</h1>
+<div class="row">
+    <div class="col">
+        <dbz-list [characterList]="charactersSvc" 
+                  (onDeleteId)="onDeleteByIdMCP($event)" ></dbz-list>
+    </div>
+    <div class="col">
+        <dbz-add-character (addCharacter)="onAddCharacterMCP($event)" ></dbz-add-character>
+    </div>
+</div>
